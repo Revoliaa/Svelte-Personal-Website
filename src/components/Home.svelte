@@ -126,6 +126,10 @@
             flex-direction: column;
         }
 
+        .intro p {
+            text-indent: 0;
+        }
+
         .skills {
             grid-template-columns: 1fr;
         }
@@ -136,6 +140,10 @@
     }
 
     @media (max-width: 600px) {
+        .intro > p {
+            word-break: break-all;
+        }
+
         .skillPercentage {
             width: 210px;
         }

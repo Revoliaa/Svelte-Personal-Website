@@ -45,7 +45,8 @@
         {
             id: 7,
             name: "Svelte Personal Website",
-            desc: "Personal website coded with Svelte framework",
+            desc: "Personal website coded with Svelte framework.",
+            repo: "https://github.com/Revoliaa/Svelte-Personal-Website",
         },
     ];
 </script>
@@ -60,15 +61,19 @@
                 <div class="links">
                     {#if project.repo}
                         <p>
-                            <a href={project.repo} rel="nofollow noopener"
-                                >GitHub</a
+                            <a
+                                href={project.repo}
+                                rel="nofollow noopener"
+                                target="_blank">GitHub</a
                             >
                         </p>
                     {/if}
                     {#if project.live}
                         <p>
-                            <a href={project.live} rel="nofollow noopener"
-                                >Live</a
+                            <a
+                                href={project.live}
+                                rel="nofollow noopener"
+                                target="_blank">Live</a
                             >
                         </p>
                     {/if}
